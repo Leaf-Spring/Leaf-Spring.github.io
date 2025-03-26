@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App Yew</title>
+<link rel="modulepreload" href="/leaf-spring_github_io-1bd74d5805673b65.js" crossorigin="anonymous" integrity="sha384-IHqS6AiAQV6ZpGPuyNTElIgd/t0fI8qunztcFXX6/WkCBmgDAbJoZGcqkhPASBV4"><link rel="preload" href="/leaf-spring_github_io-1bd74d5805673b65_bg.wasm" crossorigin="anonymous" integrity="sha384-RjUC0tT32uLbZAObInwx1xJCe60bY0hJ8wamQ/9e1zjryA+RagiYHUAfQvs3nkQn" as="fetch" type="application/wasm"></head>
+<body>
+    <div id="app"></div>
+    <!-- Trunk inyecta automáticamente el JS necesario -->
+
+<script type="module">
+import init, * as bindings from '/leaf-spring_github_io-1bd74d5805673b65.js';
+const wasm = await init({ module_or_path: '/leaf-spring_github_io-1bd74d5805673b65_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
+
